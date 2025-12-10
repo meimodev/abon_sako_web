@@ -1,7 +1,7 @@
 export const colors = {
   // Primary palette
-  primary: '#E63946',        // Deep Coral Red
-  primaryDark: '#C62828',    // Darker coral for gradients
+  primary: '#0B9BB6',        // Deep Coral Red (Updated to Teal)
+  primaryDark: '#087A8F',    // Darker coral for gradients (Updated to Dark Teal)
   
   // Secondary palette  
   secondary: '#2EC4B6',      // Electric Teal

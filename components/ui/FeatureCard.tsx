@@ -10,7 +10,7 @@ export interface FeatureCardProps {
 export function FeatureCard({ icon: Icon, title, description, accentColor = 'primary' }: FeatureCardProps) {
   // Gradient backgrounds for icon container per Requirements 4.3
   const gradientStyles = {
-    primary: 'bg-gradient-to-br from-[#E63946] to-[#C62828]',
+    primary: 'bg-gradient-to-br from-[#0B9BB6] to-[#087A8F]',
     secondary: 'bg-gradient-to-br from-[#2EC4B6] to-[#1A9E93]',
     accent: 'bg-gradient-to-br from-[#FFD166] to-[#F5B800]',
   }

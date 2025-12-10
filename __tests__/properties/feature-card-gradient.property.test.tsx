@@ -31,21 +31,21 @@ describe('Property 5: Feature Card Gradient Icon', () => {
     fc.assert(
       fc.property(featureCardPropsArb, (props) => {
         const { container } = render(
-          <FeatureCard 
-            icon={props.icon} 
-            title={props.title} 
+          <FeatureCard
+            icon={props.icon}
+            title={props.title}
             description={props.description}
             accentColor={props.accentColor}
           />
         )
-        
+
         // Find the icon container (parent of SVG)
         const svgElement = container.querySelector('svg')
         expect(svgElement).not.toBeNull()
-        
+
         const iconContainer = svgElement?.parentElement
         expect(iconContainer).not.toBeNull()
-        
+
         // Icon container should have gradient background class
         const className = iconContainer?.className || ''
         expect(className).toContain('bg-gradient-to-br')
@@ -58,28 +58,28 @@ describe('Property 5: Feature Card Gradient Icon', () => {
     fc.assert(
       fc.property(featureCardPropsArb, (props) => {
         const { container } = render(
-          <FeatureCard 
-            icon={props.icon} 
-            title={props.title} 
+          <FeatureCard
+            icon={props.icon}
+            title={props.title}
             description={props.description}
             accentColor={props.accentColor}
           />
         )
-        
+
         const svgElement = container.querySelector('svg')
         const iconContainer = svgElement?.parentElement
         const className = iconContainer?.className || ''
-        
+
         // Verify gradient direction is present
         expect(className).toContain('bg-gradient-to-br')
-        
+
         // Verify the correct color gradient is applied based on accentColor
         const expectedGradients: Record<string, string[]> = {
-          primary: ['from-[#E63946]', 'to-[#C62828]'],
+          primary: ['from-[#0B9BB6]', 'to-[#087A8F]'],
           secondary: ['from-[#2EC4B6]', 'to-[#1A9E93]'],
           accent: ['from-[#FFD166]', 'to-[#F5B800]'],
         }
-        
+
         const expectedColors = expectedGradients[props.accentColor]
         expectedColors.forEach(colorClass => {
           expect(className).toContain(colorClass)
@@ -93,17 +93,17 @@ describe('Property 5: Feature Card Gradient Icon', () => {
     fc.assert(
       fc.property(featureCardPropsArb, (props) => {
         const { container } = render(
-          <FeatureCard 
-            icon={props.icon} 
-            title={props.title} 
+          <FeatureCard
+            icon={props.icon}
+            title={props.title}
             description={props.description}
             accentColor={props.accentColor}
           />
         )
-        
+
         const svgElement = container.querySelector('svg')
         expect(svgElement).not.toBeNull()
-        
+
         // Icon should have white text color for contrast
         const className = svgElement?.className.baseVal || ''
         expect(className).toContain('text-white')
@@ -122,20 +122,20 @@ describe('Property 5: Feature Card Gradient Icon', () => {
         }),
         (props) => {
           const { container } = render(
-            <FeatureCard 
-              icon={props.icon} 
-              title={props.title} 
+            <FeatureCard
+              icon={props.icon}
+              title={props.title}
               description={props.description}
             />
           )
-          
+
           const svgElement = container.querySelector('svg')
           const iconContainer = svgElement?.parentElement
           const className = iconContainer?.className || ''
-          
+
           // Should default to primary gradient
-          expect(className).toContain('from-[#E63946]')
-          expect(className).toContain('to-[#C62828]')
+          expect(className).toContain('from-[#0B9BB6]')
+          expect(className).toContain('to-[#087A8F]')
         }
       ),
       { numRuns: 100 }

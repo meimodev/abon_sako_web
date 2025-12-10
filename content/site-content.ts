@@ -116,22 +116,6 @@ export const siteContent = {
         imageSrc: imagePaths.process.step2,
         imageAlt: 'Pembersihan ikan',
       },
-      {
-        id: 'step-3',
-        stepNumber: 3,
-        title: 'Pengolahan & Penyuwiran',
-        description: 'Dimasak dengan resep tradisional Minahasa dan disuwir halus untuk tekstur sempurna.',
-        imageSrc: imagePaths.process.step3,
-        imageAlt: 'Pengolahan abon ikan',
-      },
-      {
-        id: 'step-4',
-        stepNumber: 4,
-        title: 'Kontrol Kualitas & Pengemasan',
-        description: 'Setiap batch melewati kontrol kualitas ketat sebelum dikemas dalam kemasan higienis.',
-        imageSrc: imagePaths.process.step4,
-        imageAlt: 'Pengemasan abon ikan',
-      },
     ] as ProcessStep[],
   },
   products: {

@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
+  darkMode: 'class',
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -10,8 +11,8 @@ const config: Config = {
       colors: {
         // Primary palette
         primary: {
-          DEFAULT: '#E63946',
-          dark: '#C62828',
+          DEFAULT: '#0B9BB6',
+          dark: '#087A8F',
         },
         // Secondary palette
         secondary: {
@@ -60,15 +61,15 @@ const config: Config = {
         'card-gap': '16px',
       },
       backgroundImage: {
-        'gradient-primary': 'linear-gradient(135deg, #E63946 0%, #C62828 100%)',
+        'gradient-primary': 'linear-gradient(135deg, #0B9BB6 0%, #087A8F 100%)',
         'gradient-secondary': 'linear-gradient(135deg, #2EC4B6 0%, #1A9E93 100%)',
         'gradient-accent': 'linear-gradient(135deg, #FFD166 0%, #F5B800 100%)',
-        'gradient-hero': 'linear-gradient(135deg, #E63946 0%, #1A1A2E 100%)',
+        'gradient-hero': 'linear-gradient(135deg, #0B9BB6 0%, #1A1A2E 100%)',
       },
       boxShadow: {
         'card': '0 4px 20px rgba(0, 0, 0, 0.08)',
         'card-hover': '0 8px 30px rgba(0, 0, 0, 0.12)',
-        'button': '0 4px 14px rgba(230, 57, 70, 0.4)',
+        'button': '0 4px 14px rgba(11, 155, 182, 0.4)',
       },
       borderRadius: {
         'button': '12px',
@@ -81,7 +82,7 @@ const config: Config = {
         'background-alt': '#FFF5F5',
         'dark': '#1A1A2E',
         'dark-alt': '#16162A',
-        'primary': '#E63946',
+        'primary': '#0B9BB6',
         'secondary': '#2EC4B6',
       },
     },

@@ -16,7 +16,7 @@ export function StoryFeatureBlock() {
                 src={story.imageSrc}
                 alt={story.imageAlt}
                 fill
-                className="object-contain"
+                className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
