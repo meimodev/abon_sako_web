@@ -1,0 +1,7 @@
+export { HeroSection } from './HeroSection'
+export { ValuePropositionGrid } from './ValuePropositionGrid'
+export { StoryFeatureBlock } from './StoryFeatureBlock'
+export { MakingProcessSection } from './MakingProcessSection'
+export { ProductVariants } from './ProductVariants'
+export { CompetitionsSection } from './CompetitionsSection'
+export { CulturalBanner } from './CulturalBanner'
