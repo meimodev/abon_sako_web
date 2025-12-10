@@ -44,7 +44,7 @@ export const siteContent = {
     keywords: ['abon ikan', 'minahasa', 'oleh-oleh manado', 'SMKN 2 Tondano', 'makanan sehat', 'ikan sako'],
   },
   navbar: {
-    logo: 'ABON SAKO',
+    logo: 'ABON IKAN SAKO',
     links: [
       { label: 'Beranda', href: '#beranda' },
       { label: 'Keunggulan', href: '#keunggulan' },
