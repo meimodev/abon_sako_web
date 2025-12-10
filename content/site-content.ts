@@ -53,7 +53,7 @@ export const siteContent = {
       { label: 'Produk', href: '#produk' },
     ] as NavLink[],
     ctaText: 'Pesan Sekarang',
-    ctaHref: 'https://wa.me/+6285656064293',
+    ctaHref: 'https://wa.me/+6285656064293?text=Halo%20Abon%20Sako%21%20%F0%9F%91%8B%20Saya%20baru%20lihat%20websitenya%20dan%20tertarik%20banget%20nih%20%F0%9F%90%9F%F0%9F%98%8B.%20Mau%20tanya%20lebih%20lanjut%tentang%20%E2%9C%A8...',
   },
   hero: {
     headline: 'Cita Rasa Laut Minahasa dalam Setiap Suapan',
