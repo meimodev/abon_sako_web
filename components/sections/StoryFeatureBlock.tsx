@@ -1,12 +1,15 @@
 import Image from 'next/image'
 import { siteContent } from '@/content/site-content'
-import { SectionTitle, ScrollReveal } from '@/components/ui'
+import { SectionTitle, ScrollReveal, BackgroundDoodles } from '@/components/ui'
 
 export function StoryFeatureBlock() {
   const { story } = siteContent
 
   return (
-    <section id="cerita" className="py-section-mobile md:py-section-desktop px-4 md:px-8 bg-dark">
+    <section id="cerita" className="relative py-section-mobile md:py-section-desktop px-4 md:px-8 bg-dark overflow-hidden">
+      {/* Animated Background Doodles */}
+      <BackgroundDoodles />
+
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-center md:gap-12">
           {/* Image - Left on desktop, top on mobile */}

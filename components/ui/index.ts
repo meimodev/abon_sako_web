@@ -14,3 +14,4 @@ export { ProcessStepCard } from './ProcessStepCard'
 export type { ProcessStepCardProps } from './ProcessStepCard'
 
 export { ScrollReveal } from './ScrollReveal'
+export { BackgroundDoodles } from './BackgroundDoodles'

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { siteContent } from '@/content/site-content'
-import { CTAButton, ScrollReveal } from '@/components/ui'
+import { CTAButton, ScrollReveal, BackgroundDoodles } from '@/components/ui'
 
 /**
  * Hero Section with staggered animations
@@ -21,6 +21,9 @@ export function HeroSection() {
         <div className="absolute -top-20 -right-20 w-64 h-64 bg-white/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
       </div>
+
+      {/* Animated Background Doodles */}
+      <BackgroundDoodles />
 
       <div className="relative max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-center md:gap-12">
