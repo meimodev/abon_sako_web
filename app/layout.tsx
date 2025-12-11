@@ -26,6 +26,20 @@ export const metadata: Metadata = {
     description: siteContent.metadata.description,
     type: 'website',
     locale: 'id_ID',
+    images: [
+      {
+        url: siteContent.metadata.ogImage,
+        width: 1200,
+        height: 630,
+        alt: siteContent.metadata.title,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteContent.metadata.title,
+    description: siteContent.metadata.description,
+    images: [siteContent.metadata.ogImage],
   },
 }
 

@@ -42,6 +42,7 @@ export const siteContent = {
     title: 'Abon Ikan SAKO | Cita Rasa Otentik Laut Minahasa',
     description: 'Abon ikan sako segar karya TEFA SMKN 2 Tondano. Oleh-oleh khas Minahasa dengan cita rasa otentik laut.',
     keywords: ['abon ikan', 'minahasa', 'oleh-oleh manado', 'SMKN 2 Tondano', 'makanan sehat', 'ikan sako'],
+    ogImage: imagePaths.hero,
   },
   navbar: {
     logo: 'ABON IKAN SAKO',
