@@ -71,3 +71,31 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--color-primary);
   color: var(--color-text-light);
 }
+
+/* Custom Animations */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(150%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite linear;
+}
+
+@keyframes shine {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+.animate-shine {
+  animation: shine 3s infinite linear;
+  background-size: 200% 100%;
+}

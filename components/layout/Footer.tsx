@@ -59,7 +59,35 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="mt-12 border-t border-gray-700 pt-8 text-center">
-          <p className="text-sm text-gray-500">{new Date().getFullYear()} {footer.copyright}</p>
+          <p className="text-sm text-gray-500">
+            {new Date().getFullYear()} {footer.copyright}
+            <span className="hidden sm:inline"> • </span>
+            <span className="mt-4 block sm:mt-0 sm:inline sm:pl-2">
+              <a
+                href={footer.author.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative inline-flex items-center justify-center px-4 py-1.5 text-xs font-medium text-gray-300 transition-transform duration-300 hover:-translate-y-0.5"
+              >
+                {/* Moving Outer Glow (Shadow) */}
+                <span className="animate-shine absolute inset-0 -z-10 bg-gradient-to-r from-transparent via-primary/75 to-transparent blur-md" />
+
+                {/* Button Body (Clipped) */}
+                <span className="absolute inset-0 overflow-hidden rounded-full bg-white/5 ring-1 ring-white/10 transition-colors duration-300 group-hover:bg-primary group-hover:ring-primary/50">
+                  {/* Hover Gradient Overlay */}
+                  <span className="absolute inset-0 bg-gradient-to-r from-primary via-cyan-400 to-primary opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+
+                  {/* Internal Shimmer */}
+                  <span className="animate-shine absolute inset-0 z-0 bg-gradient-to-r from-transparent via-primary/80 to-transparent" />
+                </span>
+
+                {/* Text Content */}
+                <span className="relative z-10 flex items-center gap-1 group-hover:text-white">
+                  {footer.author.label}
+                </span>
+              </a>
+            </span>
+          </p>
         </div>
       </div>
     </footer>

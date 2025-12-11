@@ -174,6 +174,10 @@ export const siteContent = {
     },
     ctaLabel: 'Pesan Sekarang',
     ctaButtonText: 'Hubungi via WhatsApp',
-    copyright: `Abon Ikan SAKO`,
+    copyright: `ABON IKAN SAKO`,
+    author: {
+      label: '😎 Tastefully done by activid.id',
+      url: 'https://activid.id',
+    },
   },
 } as const
